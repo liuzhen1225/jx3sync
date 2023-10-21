@@ -35,7 +35,7 @@
         </el-option>
       </el-select>
     </div>
-    <div v-if="roles.length>0" style="width: 90%;color: gray;margin: 10px auto 0;display: flex;justify-content: space-between;">
+    <div v-if="roles.length>0" style="width: 90%;color: rgb(128,128,128);margin: 10px auto 0;display: flex;justify-content: space-between;">
       <el-card v-if="roles.length>0" style="width: 48%;" shadow="hover" class="box-card">
         <div style="font-weight: bold;font-size: 18px">{{roles[source].label}}</div>
         <div style="font-size: 14px;margin-top: 5px">
@@ -73,7 +73,7 @@
           <el-checkbox v-model="isJX" label="剑心喊话" size="large" />
         </el-row>
       </div>
-      <div style="width: 200px;margin-top: 8px;font-size: 12px;color: gray">
+      <div style="width: 200px;margin-top: 8px;font-size: 12px;color: rgb(128,128,128)">
         <div style="color: green">界面数据：可以同步</div>
         <div style="color: green">按键数据：可以同步</div>
         <div :style="{color:roles[source].my==''||roles[target].my==''?'red':'green'}">茗伊插件：{{roles[source].my==""||roles[target].my==""?"不可同步":"可以同步"}}</div>
